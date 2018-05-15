@@ -6,3 +6,4 @@
 #include "vec4.c"
 #include "mat3.c"
 #include "mat4.c"
+#include "quat.c"

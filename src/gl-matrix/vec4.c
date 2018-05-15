@@ -20,6 +20,8 @@ THE SOFTWARE. */
 
 /* C port by Traian Stanev */
 
+#pragma once
+
 #include "defs.h"
 
 /**
