@@ -104,7 +104,8 @@ add_custom_target(everything)
 
 add_library(libglmatrix STATIC
   src/gl-matrix/dummy.c
-  #src/gl-matrix/vec4.c
+  src/gl-matrix/utils.c
+  src/gl-matrix/vec4.c
   #src/gl-matrix/mat4.c
   #src/gl-matrix/vec3.c
 )

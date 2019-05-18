@@ -20,8 +20,6 @@ THE SOFTWARE. */
 
 /* C port by Traian Stanev */
 
-#pragma once
-
 #include "defs.h"
 
 /**
@@ -378,28 +376,6 @@ vec4_p vec4_lerp(vec4_p out, vec4_cp a, vec4_cp b, scalar_t t) {
 	out[3] = aw + t * (b[3] - aw);
 	return out;
 }
-
-/**
- * Generates a random vector with the given scale
- *
- * @param {vec4} out the receiving vector
- * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
- * @returns {vec4} out
- */
-/*
-export function random(out, vectorScale) {
-	vectorScale = vectorScale || 1.0;
-
-	//TODO: This is a pretty awful way of doing this. Find something better.
-	out[0] = glMatrix.RANDOM();
-	out[1] = glMatrix.RANDOM();
-	out[2] = glMatrix.RANDOM();
-	out[3] = glMatrix.RANDOM();
-	normalize(out, out);
-	scale(out, out, vectorScale);
-	return out;
-}
-*/
 
 /**
  * Transforms the vec4 with a mat4.

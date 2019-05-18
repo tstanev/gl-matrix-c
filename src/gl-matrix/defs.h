@@ -1,6 +1,6 @@
 #pragma once
 
-#include <math.h>
+#include <tgmath.h>
 
 #define GLM_EPSILON 1e-10
 #define GLM_PI 3.1415926535897932384
